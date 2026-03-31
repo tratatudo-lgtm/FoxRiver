@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck, Zap, Users, TrendingUp, Phone, Mail } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Zap, Users, TrendingUp, Phone, Mail, Home as HomeIcon } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { PropertyCard } from '../components/ui/PropertyCard';
 import { MOCK_PROPERTIES, MOCK_TEAM, MOCK_TESTIMONIALS } from '../mockData';
@@ -103,7 +103,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onPropertyClick }) => {
               onClick={() => onNavigate('buy')}
             >
               <div className="w-16 h-16 rounded-full border border-accent flex items-center justify-center mb-8 group-hover:bg-accent transition-all duration-500">
-                <Home size={24} className="text-accent group-hover:text-white" />
+                <HomeIcon size={24} className="text-accent group-hover:text-white" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4">Quero Comprar</h3>
               <p className="text-white/60 text-sm mb-8">Encontre a casa dos seus sonhos com a ajuda dos nossos especialistas.</p>
